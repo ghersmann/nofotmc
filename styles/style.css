@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(../fonts/Satoshi-Light.ttf) format(truetype),
+    url(../fonts/Satoshi-Light.woff) format(woff),
+    url(../fonts/Satoshi-Light.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: Sentient;
+  src: url(../fonts/Sentient-Extralight.ttf) format(truetype),
+    url(../fonts/Sentient-Extralight.woff) format(woff),
+    url(../fonts/Sentient-Extralight.woff2) format(woff2);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --text: black;
+  --background: hotpink;
+}
+
+html {
+  color: var(--text);
+  font-family: Satoshi, Times;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 0.5rem;
+  color: white;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.nav-burger {
+  height: 4rem;
+  width: 4rem;
+  background-image: linear-gradient(green, yellow);
+  color: red;
+  padding: 0.1rem;
+}
+
+.main-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 0.5rem;
+  color: white;
+  background-color: aliceblue;
+  width: 100vw;
+  height: 500px;
+}
+
+.one {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-image: url(../img/cameras/2023-konica-autoreflex-tc-hexanon-50mm/2023-konica-autoreflex-tc---hexanon-ar-50mm-f1-7-6198-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.two {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-image: url(../img/cameras/2023-minolta-srt101b-md-50mm/2023-minolta-srt101b---4404588--md-50mm-1-7---9795888--photo-by-gustav-hersmann-1662-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.three {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-image: url(../img/cameras/2023-pentax-espio-115m/2023-pentax-espio-115m---1357.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.four {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-image: url(../img/cameras/2023-werra-ii/werra-ii---393554-5999-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.five {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  background-image: url(../img/cameras/2023-minolta-srt101b-md-50mm/2023-minolta-srt101b---4404588--md-50mm-1-7---9795888--photo-by-gustav-hersmann-1669-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-wrap {
+  padding-bottom: 2rem;
+}
+
+.footer-content {
+  background-color: var(--text);
+  color: white;
+  bottom: 0;
+  padding: 0.5rem;
+  height: 2rem;
+  position: absolute;
+  width: 100vw;
+}
